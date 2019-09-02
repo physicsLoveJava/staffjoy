@@ -6,8 +6,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>xyz.staffjoy</groupId>
-        <artifactId>staffjoy-parent</artifactId>
+        <groupId>org.spearhead</groupId>
+        <artifactId>cloud-template</artifactId>
         <version>1.0</version>
     </parent>
 
@@ -36,21 +36,16 @@
             <version>3.0.1</version>
         </dependency>
         <dependency>
-            <groupId>xyz.staffjoy</groupId>
+            <groupId>org.spearhead</groupId>
             <artifactId>common-lib</artifactId>
         </dependency>
         <dependency>
-            <groupId>xyz.staffjoy</groupId>
+            <groupId>org.spearhead</groupId>
             <artifactId>account-api</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
-            <groupId>xyz.staffjoy</groupId>
-            <artifactId>company-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>xyz.staffjoy</groupId>
+            <groupId>org.spearhead</groupId>
             <artifactId>mail-api</artifactId>
             <version>1.0.1</version>
         </dependency>

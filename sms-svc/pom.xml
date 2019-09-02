@@ -6,8 +6,8 @@
     <modelVersion>4.0.0</modelVersion>
  
     <parent>
-        <groupId>xyz.staffjoy</groupId>
-        <artifactId>staffjoy-parent</artifactId>
+        <groupId>org.spearhead</groupId>
+        <artifactId>cloud-template</artifactId>
         <version>1.0</version>
     </parent>
  
@@ -30,11 +30,11 @@
             <version>1.1.0</version>
         </dependency>
         <dependency>
-            <groupId>xyz.staffjoy</groupId>
+            <groupId>org.spearhead</groupId>
             <artifactId>common-lib</artifactId>
         </dependency>
         <dependency>
-            <groupId>xyz.staffjoy</groupId>
+            <groupId>org.spearhead</groupId>
             <artifactId>sms-api</artifactId>
             <version>1.0.0</version>
         </dependency>
