@@ -12,9 +12,9 @@
     </parent>
  
     <artifactId>mail-svc</artifactId>
-    <name>Staffjoy-Mail-Svc</name>
+    <name>SpearHead-Mail-Svc</name>
     <version>1.0.0</version>
-    <description>Mail project for Staffjoy microservices demo</description>
+    <description>Mail project for SpearHead microservices demo</description>
  
     <dependencies>
 

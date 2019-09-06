@@ -12,7 +12,7 @@
     </parent>
  
     <artifactId>sms-api</artifactId>
-    <name>Staffjoy-SMS-API</name>
+    <name>SpearHead-SMS-API</name>
     <version>1.0.0</version>
     <description>SMS API/DTO for sharing between Client/Server</description>
  

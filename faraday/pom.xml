@@ -12,9 +12,9 @@
     </parent>
 
     <artifactId>faraday</artifactId>
-    <name>Staffjoy-Proxy</name>
+    <name>SpearHead-Proxy</name>
     <version>1.0.0</version>
-    <description>Proxy or Gateway, Aka. Central Traffic Entry Point for Staffjoy MicroServices and Apps</description>
+    <description>Proxy or Gateway, Aka. Central Traffic Entry Point for SpearHead MicroServices and Apps</description>
 
     <dependencies>
         <dependency>

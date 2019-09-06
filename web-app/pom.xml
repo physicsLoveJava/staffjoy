@@ -12,9 +12,9 @@
     </parent>
 
     <artifactId>web-app</artifactId>
-    <name>Staffjoy-Web-App</name>
+    <name>SpearHead-Web-App</name>
     <version>1.0.0</version>
-    <url>https://www.staffjoy.xyz</url>
+    <url>https://www.SpearHead.xyz</url>
 
     <dependencies>
         <dependency>

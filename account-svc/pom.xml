@@ -13,8 +13,8 @@
  
     <artifactId>account-svc</artifactId>
     <version>1.0.0</version>
-    <name>Staffjoy-Account-Svc</name>
-    <url>https://www.staffjoy.xyz</url>
+    <name>SpearHead-Account-Svc</name>
+    <url>https://www.SpearHead.xyz</url>
  
     <dependencies>
         <dependency>
@@ -55,18 +55,8 @@
         </dependency>
         <dependency>
             <groupId>org.spearhead</groupId>
-            <artifactId>company-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.spearhead</groupId>
             <artifactId>mail-api</artifactId>
             <version>1.0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.spearhead</groupId>
-            <artifactId>bot-api</artifactId>
-            <version>1.0.0</version>
         </dependency>
     </dependencies>
     <build>

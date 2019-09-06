@@ -12,9 +12,9 @@
     </parent>
  
     <artifactId>sms-svc</artifactId>
-    <name>Staffjoy-SMS-Svc</name>
+    <name>SpearHead-SMS-Svc</name>
     <version>1.0.0</version>
-    <description>SMS project for Staffjoy microservices demo</description>
+    <description>SMS project for SpearHead microservices demo</description>
  
     <dependencies>
 

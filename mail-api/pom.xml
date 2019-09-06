@@ -12,7 +12,7 @@
     </parent>
  
     <artifactId>mail-api</artifactId>
-    <name>Staffjoy-Mail-API</name>
+    <name>SpearHead-Mail-API</name>
     <version>1.0.1</version>
     <description>Mail API/DTO for sharing between Client/Server</description>
  
