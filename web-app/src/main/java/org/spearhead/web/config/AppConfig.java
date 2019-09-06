@@ -5,8 +5,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
-import xyz.staffjoy.common.async.ContextCopyingDecorator;
-import xyz.staffjoy.common.config.StaffjoyWebConfig;
+import org.spearhead.common.common.async.ContextCopyingDecorator;
+import org.spearhead.common.common.config.StaffjoyWebConfig;
 
 import java.util.concurrent.Executor;
 

@@ -26,15 +26,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import xyz.staffjoy.common.api.BaseResponse;
-import xyz.staffjoy.common.auth.AuthConstant;
-import xyz.staffjoy.common.auth.AuthContext;
-import xyz.staffjoy.common.auth.Authorize;
-import xyz.staffjoy.common.auth.PermissionDeniedException;
-import xyz.staffjoy.common.env.EnvConfig;
-import xyz.staffjoy.common.env.EnvConstant;
-import xyz.staffjoy.common.error.ServiceException;
-import xyz.staffjoy.common.validation.PhoneNumber;
+import org.spearhead.common.common.api.BaseResponse;
+import org.spearhead.common.common.auth.AuthConstant;
+import org.spearhead.common.common.auth.AuthContext;
+import org.spearhead.common.common.auth.Authorize;
+import org.spearhead.common.common.auth.PermissionDeniedException;
+import org.spearhead.common.common.env.EnvConfig;
+import org.spearhead.common.common.env.EnvConstant;
+import org.spearhead.common.common.error.ServiceException;
+import org.spearhead.common.common.validation.PhoneNumber;
 
 @RestController
 @RequestMapping("/v1/account")

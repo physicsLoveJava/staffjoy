@@ -6,7 +6,7 @@ import org.spearhead.mail.dto.EmailRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import xyz.staffjoy.common.api.BaseResponse;
+import org.spearhead.common.common.api.BaseResponse;
 import org.spearhead.mail.service.MailSendService;
 
 import javax.validation.Valid;

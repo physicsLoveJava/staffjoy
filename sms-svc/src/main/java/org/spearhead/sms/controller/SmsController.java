@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import xyz.staffjoy.common.api.BaseResponse;
-import xyz.staffjoy.common.api.ResultCode;
-import xyz.staffjoy.common.auth.AuthConstant;
-import xyz.staffjoy.common.auth.Authorize;
+import org.spearhead.common.common.api.BaseResponse;
+import org.spearhead.common.common.api.ResultCode;
+import org.spearhead.common.common.auth.AuthConstant;
+import org.spearhead.common.common.auth.Authorize;
 import org.spearhead.sms.props.AppProps;
 import org.spearhead.sms.service.SmsSendService;
 

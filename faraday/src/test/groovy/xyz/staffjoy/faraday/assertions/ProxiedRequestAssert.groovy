@@ -1,4 +1,4 @@
-package xyz.staffjoy.faraday.assertions
+package org.spearhead.faraday.faraday.assertions
 
 import com.github.tomakehurst.wiremock.client.VerificationException
 import com.github.tomakehurst.wiremock.junit.WireMockRule

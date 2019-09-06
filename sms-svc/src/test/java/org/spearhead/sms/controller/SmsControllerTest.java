@@ -16,8 +16,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.test.context.junit4.SpringRunner;
-import xyz.staffjoy.common.api.BaseResponse;
-import xyz.staffjoy.common.auth.AuthConstant;
+import org.spearhead.common.common.api.BaseResponse;
+import org.spearhead.common.common.auth.AuthConstant;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;

@@ -24,9 +24,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
-import xyz.staffjoy.common.api.BaseResponse;
-import xyz.staffjoy.common.auth.AuthConstant;
-import xyz.staffjoy.common.validation.PhoneNumber;
+import org.spearhead.common.common.api.BaseResponse;
+import org.spearhead.common.common.auth.AuthConstant;
+import org.spearhead.common.common.validation.PhoneNumber;
 
 @FeignClient(name = AccountConstant.SERVICE_NAME, path = "/v1/account", url = "${staffjoy.account-service-endpoint}")
 // TODO Client side validation can be enabled as needed

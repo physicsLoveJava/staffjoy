@@ -13,7 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.test.context.junit4.SpringRunner;
-import xyz.staffjoy.common.api.BaseResponse;
+import org.spearhead.common.common.api.BaseResponse;
 import org.spearhead.mail.MailConstant;
 import org.spearhead.mail.client.MailClient;
 import org.spearhead.mail.dto.EmailRequest;

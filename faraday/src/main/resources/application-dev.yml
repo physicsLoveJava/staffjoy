@@ -5,7 +5,7 @@ server:
 faraday:
   enable_programmatic_mapping: false
   tracing:
-    enabled: false
+    enabled: true
   mappings:
     -
       name: faraday_route

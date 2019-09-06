@@ -8,7 +8,7 @@ import org.spearhead.mail.MailConstant;
 import org.spearhead.mail.props.AppProps;
 import org.springframework.context.annotation.Import;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
-import xyz.staffjoy.common.config.StaffjoyRestConfig;
+import org.spearhead.common.common.config.StaffjoyRestConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

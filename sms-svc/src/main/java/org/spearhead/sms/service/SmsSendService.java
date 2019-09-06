@@ -6,14 +6,12 @@ import com.aliyuncs.dysmsapi.model.v20170525.SendSmsResponse;
 import com.aliyuncs.exceptions.ClientException;
 import com.github.structlog4j.ILogger;
 import com.github.structlog4j.SLoggerFactory;
-import io.sentry.SentryClient;
-import io.sentry.context.Context;
 import org.spearhead.sms.config.AppConfig;
 import org.spearhead.sms.dto.SmsRequest;
+import org.spearhead.sms.props.AppProps;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
-import org.spearhead.sms.props.AppProps;
 
 @Service
 public class SmsSendService {
@@ -25,9 +23,6 @@ public class SmsSendService {
 
     @Autowired
     private IAcsClient acsClient;
-
-    @Autowired
-    SentryClient sentryClient;
 
     @Async(AppConfig.ASYNC_EXECUTOR_NAME)
     public void sendSmsAsync(SmsRequest smsRequest) {
@@ -45,17 +40,9 @@ public class SmsSendService {
                         "template_code", smsRequest.getTemplateCode(),
                         "template_param", smsRequest.getTemplateParam());
             } else {
-                Context sentryContext = sentryClient.getContext();
-                sentryContext.addTag("to", smsRequest.getTo());
-                sentryContext.addTag("template_code", smsRequest.getTemplateCode());
-                sentryClient.sendMessage("bad aliyun sms response " + response.getCode());
                 logger.error("failed to send: bad aliyun sms response " + response.getCode());
             }
         } catch (ClientException ex) {
-            Context sentryContext = sentryClient.getContext();
-            sentryContext.addTag("to", smsRequest.getTo());
-            sentryContext.addTag("template_code", smsRequest.getTemplateCode());
-            sentryClient.sendException(ex);
             logger.error("failed to make aliyun sms request ", ex);
         }
     }

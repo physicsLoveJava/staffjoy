@@ -4,8 +4,8 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
-import xyz.staffjoy.common.api.BaseResponse;
-import xyz.staffjoy.common.auth.AuthConstant;
+import org.spearhead.common.common.api.BaseResponse;
+import org.spearhead.common.common.auth.AuthConstant;
 import org.spearhead.sms.SmsConstant;
 import org.spearhead.sms.dto.SmsRequest;
 

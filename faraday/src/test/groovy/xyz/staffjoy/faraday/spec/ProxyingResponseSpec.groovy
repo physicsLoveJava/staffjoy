@@ -1,4 +1,4 @@
-package xyz.staffjoy.faraday.spec
+package org.spearhead.faraday.faraday.spec
 
 import static xyz.staffjoy.faraday.assertions.Assertions.assertThat
 import spock.lang.Unroll

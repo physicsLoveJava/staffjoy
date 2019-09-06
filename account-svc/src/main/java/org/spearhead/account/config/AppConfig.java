@@ -7,8 +7,8 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import xyz.staffjoy.common.async.ContextCopyingDecorator;
-import xyz.staffjoy.common.config.StaffjoyRestConfig;
+import org.spearhead.common.common.async.ContextCopyingDecorator;
+import org.spearhead.common.common.config.StaffjoyRestConfig;
 
 import java.util.concurrent.Executor;
 

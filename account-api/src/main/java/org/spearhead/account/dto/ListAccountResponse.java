@@ -1,7 +1,7 @@
 package org.spearhead.account.dto;
 
 import lombok.*;
-import xyz.staffjoy.common.api.BaseResponse;
+import org.spearhead.common.common.api.BaseResponse;
 
 @Getter
 @Setter

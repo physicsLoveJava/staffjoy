@@ -7,16 +7,14 @@ import com.aliyuncs.exceptions.ClientException;
 import com.github.structlog4j.ILogger;
 import com.github.structlog4j.IToLog;
 import com.github.structlog4j.SLoggerFactory;
-import io.sentry.SentryClient;
-import io.sentry.context.Context;
 import org.spearhead.mail.MailConstant;
 import org.spearhead.mail.config.AppConfig;
 import org.spearhead.mail.dto.EmailRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
-import xyz.staffjoy.common.env.EnvConfig;
-import xyz.staffjoy.common.env.EnvConstant;
+import org.spearhead.common.common.env.EnvConfig;
+import org.spearhead.common.common.env.EnvConstant;
 
 @Service
 public class MailSendService {
@@ -28,9 +26,6 @@ public class MailSendService {
 
     @Autowired
     IAcsClient acsClient;
-
-    @Autowired
-    SentryClient sentryClient;
 
     @Async(AppConfig.ASYNC_EXECUTOR_NAME)
     public void sendMailAsync(EmailRequest req) {
@@ -67,10 +62,6 @@ public class MailSendService {
             SingleSendMailResponse mailResponse = acsClient.getAcsResponse(mailRequest);
             logger.info("Successfully sent email - request id : " + mailResponse.getRequestId(), logContext);
         } catch (ClientException ex) {
-            Context sentryContext = sentryClient.getContext();
-            sentryContext.addTag("subject", req.getSubject());
-            sentryContext.addTag("to", req.getTo());
-            sentryClient.sendException(ex);
             logger.error("Unable to send email ", ex, logContext);
         }
     }

@@ -28,13 +28,13 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-import xyz.staffjoy.common.api.BaseResponse;
-import xyz.staffjoy.common.api.ResultCode;
-import xyz.staffjoy.common.auditlog.LogEntry;
-import xyz.staffjoy.common.auth.AuthContext;
-import xyz.staffjoy.common.crypto.Sign;
-import xyz.staffjoy.common.env.EnvConfig;
-import xyz.staffjoy.common.error.ServiceException;
+import org.spearhead.common.common.api.BaseResponse;
+import org.spearhead.common.common.api.ResultCode;
+import org.spearhead.common.common.auditlog.LogEntry;
+import org.spearhead.common.common.auth.AuthContext;
+import org.spearhead.common.common.crypto.Sign;
+import org.spearhead.common.common.env.EnvConfig;
+import org.spearhead.common.common.error.ServiceException;
 
 import static java.util.stream.Collectors.toList;
 

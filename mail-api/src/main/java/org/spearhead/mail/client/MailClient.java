@@ -3,7 +3,7 @@ package org.spearhead.mail.client;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import xyz.staffjoy.common.api.BaseResponse;
+import org.spearhead.common.common.api.BaseResponse;
 import org.spearhead.mail.MailConstant;
 import org.spearhead.mail.dto.EmailRequest;
 

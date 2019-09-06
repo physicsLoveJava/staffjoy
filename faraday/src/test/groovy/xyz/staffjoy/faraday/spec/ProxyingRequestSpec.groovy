@@ -1,4 +1,4 @@
-package xyz.staffjoy.faraday.spec
+package org.spearhead.faraday.faraday.spec
 
 import spock.lang.Unroll
 import xyz.staffjoy.faraday.BasicSpec

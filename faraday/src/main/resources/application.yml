@@ -13,7 +13,6 @@ server:
 
 staffjoy:
   common:
-    sentry-dsn: ${SENTRY_DSN}
     deploy-env: ${DEPLOY:V2}
-  signing-secret: ${SIGNING_SECRET}
-
+  signing-secret: signing_secret
+#  signing-secret: ${SIGNING_SECRET}
